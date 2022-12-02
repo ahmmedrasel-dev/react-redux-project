@@ -10,7 +10,7 @@ const Navbar = () => {
         <ul className='h-full  mx-auto flex justify-between items-center gap-3 font-semibold text-indigo-900'>
           <h1 className='flex-1'>Moon Tech</h1>
           <li>
-            <Link to='/home'>Home</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
             <Link to='/top-rated'>Top Rated</Link>
@@ -23,11 +23,11 @@ const Navbar = () => {
               <IoIosListBox className='text-white' />
             </Link>
           </li>
-          <li title='cart' className='bg-indigo-500 p-2 rounded-full'>
-            <Link to='/cart'>
+          <Link to='/cart'>
+            <li title='cart' className='bg-indigo-500 p-2 rounded-full'>
               <BsFillCartFill className='text-white ' />
-            </Link>
-          </li>
+            </li>
+          </Link>
         </ul>
       </nav>
     </div>
